@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+}
+
+.o-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.c-scrollCols {
+  display: flex;
+}
+
+.c-scrollCol {
+  width: 33.33%;
+  height: calc(100vh - 150px);
+  overflow: hidden;
+}
+
+.u-blockImg {
+  display: block;
+  width: 100%;
+}
+
+.c-header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.c-header__heading {
+  margin-top: 0;
+}

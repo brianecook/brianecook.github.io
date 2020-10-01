@@ -1,13 +1,12 @@
 body {
   display: flex;
+  flex-direction: column;
   overflow: hidden;
   margin: 0;
 }
 
 .o-container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 12px;
+  width: 100%;
 }
 
 .c-scrollCols {
@@ -32,4 +31,16 @@ body {
 
 .c-header__heading {
   margin-top: 0;
+}
+
+.c-footer {
+  background-color: aquamarine;
+  color: black;
+  padding: 50px;
+  min-height: 400px;
+}
+
+.c-footer__inner {
+  max-width: 1280px;
+  margin: 0 auto;
 }

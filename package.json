@@ -1,0 +1,23 @@
+{
+  "name": "brianecook.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianecook/brianecook.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianecook/brianecook.github.io/issues"
+  },
+  "homepage": "https://github.com/brianecook/brianecook.github.io#readme",
+  "devDependencies": {
+    "webpack": "^5.10.2",
+    "webpack-cli": "^4.2.0"
+  }
+}

@@ -85,6 +85,10 @@ h6 {
   font-size: 1rem;
 }
 
+a {
+  color: #4aa0ca;
+}
+
 @font-face {
   font-family: "Quicksand";
   src: url("Quicksand-Bold.ttf");
@@ -125,6 +129,8 @@ body {
   margin: 0;
 }
 body.index {
+  flex-direction: row;
+  align-items: center;
   background-image: url("../images/bg.jpg");
   background-size: cover;
   background-position: center bottom;
@@ -145,7 +151,7 @@ body.index:before {
 
 .o-container {
   width: 100%;
-  max-width: 1150px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -157,7 +163,10 @@ body.index:before {
 .o-article__image,
 .o-article__text {
   width: 50%;
-  padding: 12px;
+}
+
+.o-article__text {
+  padding: 16px;
 }
 
 .o-article__image img {
@@ -166,6 +175,27 @@ body.index:before {
 
 .o-article__nav {
   margin-top: 16px;
+}
+
+.o-textLink {
+  position: relative;
+  color: #4aa0ca;
+  text-decoration: none;
+}
+.o-textLink::before {
+  content: "";
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #4aa0ca;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.o-textLink:hover:before {
+  width: 100%;
+  opacity: 1;
 }
 
 .o-bg {

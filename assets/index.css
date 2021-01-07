@@ -169,12 +169,24 @@ body.index:before {
   padding: 16px;
 }
 
+.o-article__image {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+}
 .o-article__image img {
+  display: block;
   width: 100%;
 }
 
 .o-article__nav {
   margin-top: 16px;
+}
+
+.o-article__list {
+  list-style: disc;
+  margin: 12px 0;
+  padding-left: 18px;
 }
 
 .o-textLink {

@@ -160,12 +160,10 @@ body.index:before {
   display: flex;
 }
 
-.o-article__image,
-.o-article__text {
-  width: 50%;
-}
-
-.o-article__text {
+.o-article__content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-column-gap: 12px;
   padding: 16px;
 }
 

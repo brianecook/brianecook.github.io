@@ -71,22 +71,22 @@ function getTracksScrolled($elems) {
   return trackArray.indexOf(false) > -1 ? false : true;
 }
 
-// const handleTouch = () => {
-//   let start = 0;
+const handleTouch = () => {
+  let start = 0;
 
-//   $track1.addEventListener('touchstart', touchStart, false);
-//   $track1.addEventListener('touchmove', touchMove, false);
-//   $track2.addEventListener('touchstart', touchStart, false);
-//   $track2.addEventListener('touchmove', touchMove, false);
+  $track1.addEventListener('touchstart', touchStart, false);
+  $track1.addEventListener('touchmove', touchMove, false);
+  $track2.addEventListener('touchstart', touchStart, false);
+  $track2.addEventListener('touchmove', touchMove, false);
   
-//   function touchStart(e) {
-//     start = e.touches[0].pageY;
-//   }
+  function touchStart(e) {
+    start = e.touches[0].pageY;
+  }
 
-//   function touchMove(e){
-//     const offset = start - e.touches[0].pageY;
+  function touchMove(e){
+    const offset = start - e.touches[0].pageY;
     
-//     handleScroll($track1, $track2, offset);
-//     handleScroll($track2, $track1, offset);
-//   }
-// }
+    handleScroll($track1, $track2, offset);
+    handleScroll($track2, $track1, offset);
+  }
+}

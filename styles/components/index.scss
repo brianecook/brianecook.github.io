@@ -36,20 +36,24 @@ body {
 
 .o-article {
   background: $color-white;
-  display: flex;
 }
 
 .o-article__content {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  grid-column-gap: 12px;
   padding: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+  @include media-tablet-up {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-column-gap: 12px;
+  }
 }
 
 .o-article__image {
-  display: flex;
-  align-items: center;
-  background-color: $color-black;
+  margin-bottom: 16px;
+  @include media-tablet-up {
+    margin-bottom: 0;
+  }
 }
 
 .o-article__nav {
@@ -73,7 +77,7 @@ body {
 }
 
 .c-link {
-  display: inline-block;
+  display: inline;
   position: relative;
   color: $color-blue;
   text-decoration: none;

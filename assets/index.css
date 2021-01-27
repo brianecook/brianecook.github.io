@@ -157,20 +157,28 @@ body.index:before {
 
 .o-article {
   background: #fff;
-  display: flex;
 }
 
 .o-article__content {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  grid-column-gap: 12px;
   padding: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media only screen and (min-width: 768px) {
+  .o-article__content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-column-gap: 12px;
+  }
 }
 
 .o-article__image {
-  display: flex;
-  align-items: center;
-  background-color: #000;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .o-article__image {
+    margin-bottom: 0;
+  }
 }
 
 .o-article__nav {
@@ -194,7 +202,7 @@ body.index:before {
 }
 
 .c-link {
-  display: inline-block;
+  display: inline;
   position: relative;
   color: #4aa0ca;
   text-decoration: none;

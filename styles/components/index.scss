@@ -69,6 +69,10 @@ body {
   padding-left: 18px;
 }
 
+.o-scrollColsPage {
+  overflow-y: hidden;
+}
+
 .o-scrollCols {
   display: flex;
 }

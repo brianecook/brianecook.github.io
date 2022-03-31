@@ -3,12 +3,12 @@ body {
   line-height: 1.5;
   font-family: 'Quicksand';
   margin: 0;
+  overflow-y: auto;
   &.index {
     @include media-tablet-up {
       display: flex;
       align-items: center;
       flex-direction: row;
-      overflow: hidden;
       background-image: url('../images/bg.jpg');
       background-size: cover;
       background-position: center bottom;

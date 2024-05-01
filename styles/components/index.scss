@@ -1,6 +1,6 @@
 body {
   position: relative;
-  line-height: 1.5;
+  line-height: 1.7;
   font-family: 'Quicksand';
   margin: 0;
   overflow-y: auto;
@@ -74,6 +74,14 @@ body {
   list-style: disc;
   margin: 12px 0;
   padding-left: 18px;
+}
+
+.o-article__intro {
+  margin-bottom: 16px;
+}
+
+.o-article__section {
+  margin-bottom: 16px;
 }
 
 .o-scrollColsPage {
